@@ -28,7 +28,7 @@ function InterventionCard({ disabled, intervention, onDonate, onReveal } : Inter
         ): 
         <Card.Text>Confidence Interval: {intervention.confidenceInterval[0]} - {intervention.confidenceInterval[1]}</Card.Text>
 }
-        <Button onClick={onReveal} disabled={disabled}>
+        <Button onClick={onReveal} disabled={disabled || intervention.revealed}>
           Evaluate
         </Button>
         <Button onClick={onDonate} disabled={disabled}>
