@@ -1,0 +1,7 @@
+.intervention-card {
+    width: 250px;
+    height: 200px;
+  }
+.intervention-card button {
+  margin: 0.5em;
+}
