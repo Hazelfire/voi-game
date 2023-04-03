@@ -64,7 +64,7 @@ function App() {
 
   function endGame(newInterventions : InterventionState[]){
     setInterventions(newInterventions.map(x =>({...x, revealed: true})))
-    fetch("https://discord.com/api/webhooks/1092296665307815987/iGxuyW7dWI1puN833zt0WQnrEdCsdIENiF8GP1-QmSVYmhS82gldtDAONIfqdahX0c4v", {method: "POST", headers: {"Content-Type": "application/json"}, 
+    fetch("https://discord.com/api/webhooks/1092318143986270228/AO_LmD2oB8uOR3c-F-qGZIW0P2S_dmVvpApy_up-62fRO0fFOECkVi4SHJwIOTfkrQ3F", {method: "POST", headers: {"Content-Type": "application/json"}, 
     body: JSON.stringify({content: `Player ${name} got a score of ${calculateScore(newInterventions)}`})
   })
   }
